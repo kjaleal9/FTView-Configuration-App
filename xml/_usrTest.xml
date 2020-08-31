@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gfx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gfx-SE12.xsd">
+    <displaySettings displayType="replace" position="specifyPositionInPixels" positionX="0" positionY="172" securityCode="*" backColor="silver" titleBar="false" maximumTagUpdateRate="1" focusHighlightColor="lime" disableFocusHighlight="false" size="specifySizeInPixels" width="1920" height="853" allowMultipleRunningCopies="false" cacheAfterDisplaying="false" sizeToMainWindow="false" showLastAcquiredValue="true" TrackScreenForNavigation="true" TrackName="High Shear Mixer PID" allowResizing="false" whenResized="scale" beepOnPress="false" highlightWhenCursorPassesOver="true" interactiveHighlightColor="white" displayOnScreenKeyboard="false" allowButtonActionOnError="true" fieldNotSelectedTextColor="black" fieldNotSelectedFillColor="white" fieldSelectedTextColor="black" fieldSelectedFillColor="white" fieldInErrorNotSelectedTextColor="black" fieldInErrorNotSelectedFillColor="red" fieldInErrorSelectedTextColor="white" fieldInErrorSelectedFillColor="red" startupCommand="" shutdownCommand="" useGradientStyle="false" endColor="teal" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+    <image name="Image2" height="854" width="1920" left="0" top="0" visible="true" wallpaper="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" imageBackStyle="solid" imageBackColor="navy" imageColor="white" imageBlink="false" description="" imageName="_PCI_body_bg_L3"/>
+    <group name="MixProofV" visible="true" wallpaper="false" toolTipText="/*LS:0 #2*/" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.MixProofV" linkToolTipText="true">
+        <rectangle name="BoxMainVx1" height="16" width="11" left="635" top="488" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxMainVx1" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateTouch TouchStyle="rectangular" pressAction="" repeatAction="" releaseAction="Display _STD_CM_ValvDig2 /T#1,#2,STD\HMI\Mem_1 /RP" repeatRate="0.25">
+                    <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                        <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                        <imageSettings imageReference="noImage"/>
+                    </confirm>
+                </animateTouch>
+                <animateColor expression="({#1.Out_MainIO}*2) + ({#1.Out_GenAlmOn}*4)" blinkRate="2">
+                    <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="1" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="2" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="3" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="4" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="5" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                </animateColor>
+            </animations>
+        </rectangle>
+        <rectangle name="BoxLowerSeatVx3" height="4" width="9" left="636" top="499" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxLowerSeatVx3" linkToolTipText="true" backStyle="solid" backColor="lime" foreColor="lime" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_LowSIO}" expressionTrueState="visible"/>
+            </animations>
+        </rectangle>
+        <rectangle name="BoxUpperSeatVx3" height="4" width="9" left="636" top="489" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxUpperSeatVx3" linkToolTipText="true" backStyle="solid" backColor="lime" foreColor="lime" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_UppSIO}" expressionTrueState="visible"/>
+            </animations>
+        </rectangle>
+        <line name="LineUpperSeatVx3" height="1" width="11" left="635" top="493" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineUpperSeatVx3" linkToolTipText="true" line="635 493 645 493 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black"/>
+        <line name="LineLowerSeatVx3" height="1" width="11" left="635" top="498" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineLowerSeatVx3" linkToolTipText="true" line="635 498 645 498 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black"/>
+        <ellipse name="EllipseAlmSupVx15" height="5" width="5" left="632" top="485" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseAlmSupVx15" linkToolTipText="true" backStyle="solid" backColor="#FF8000" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_AlmSupMode}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <ellipse name="EllipseSimVx9" height="5" width="5" left="632" top="501" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseSimVx9" linkToolTipText="true" backStyle="solid" backColor="white" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_SimMode}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <ellipse name="EllipseFltVx15" height="5" width="5" left="643" top="501" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseFltVx15" linkToolTipText="true" backStyle="solid" backColor="yellow" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_GenAlmOn}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <ellipse name="EllipseManVx15" height="5" width="5" left="643" top="485" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseManVx15" linkToolTipText="true" backStyle="solid" backColor="navy" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_ManMode}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <line name="Line173" height="6" width="1" left="640" top="493" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line9" linkToolTipText="true" line="640 493 640 498 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black">
+            <animations>
+                <animateVisibility expression="{#1.Out_MainIO}" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <polygon name="Polygon48" height="9" width="9" left="636" top="490" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon48" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="640 490 644 498 636 498 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="({#1.Out_GenAlmOn} And {#1.Out_GenUnack})" expressionTrueState="visible"/>
+                <animateColor expression="{#1.Out_GenAlmOn}" blinkRate="2">
+                    <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="red" backColor2="red" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                </animateColor>
+            </animations>
+        </polygon>
+        <parameters>
+            <parameter name="#1" description="PLCTag" value=""/>
+            <parameter name="#2" description="Name" value=""/>
+        </parameters>
+    </group>
+    <group name="ValveV" visible="true" wallpaper="false" toolTipText="/*LS:0 #2*/" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.ValveV" linkToolTipText="true">
+        <rectangle name="BoxMainVx3" height="16" width="11" left="638" top="403" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxMainVx3" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateTouch TouchStyle="rectangular" pressAction="" repeatAction="" releaseAction="Display _STD_CM_ValvDig1 /T#1,#2,STD\HMI\Mem_1 /RP" repeatRate="0.25">
+                    <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                        <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                        <imageSettings imageReference="noImage"/>
+                    </confirm>
+                </animateTouch>
+                <animateColor expression="({#1.Out_Main1IO}*2) + ({#1.Out_Main2IO}*2) + ({#1.Out_GenAlmOn}*4)" blinkRate="2">
+                    <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="1" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="2" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="3" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="4" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="5" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                </animateColor>
+            </animations>
+        </rectangle>
+        <line name="LineMiddleTopVx3" height="6" width="1" left="643" top="403" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineMiddleTopVx3" linkToolTipText="true" line="643 403 643 408 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 1)) OR ({#1.Out_MainActFB} AND (#3 &amp; 1)) OR ({#1.Out_Main2IO} AND (#5 &amp; 1))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineMiddleCenterVx3" height="6" width="1" left="643" top="408" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineMiddleCenterVx3" linkToolTipText="true" line="643 408 643 413 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 256)) OR ({#1.Out_MainActFB} AND (#3 &amp; 256)) OR ({#1.Out_Main2IO} AND (#5 &amp; 256))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineMiddleBottomVx3" height="6" width="1" left="643" top="413" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineMiddleBottomVx3" linkToolTipText="true" line="643 413 643 418 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 16)) OR ({#1.Out_MainActFB} AND (#3 &amp; 16)) OR ({#1.Out_Main2IO} AND (#5 &amp; 16))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineBottomLeftVx3" height="1" width="7" left="638" top="413" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineBottomLeftVx3" linkToolTipText="true" line="638 413 644 413 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 32)) OR ({#1.Out_MainActFB} AND (#3 &amp; 32)) OR ({#1.Out_Main2IO} AND (#5 &amp; 32))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineBottomRightVx3" height="1" width="6" left="643" top="413" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineBottomRightVx3" linkToolTipText="true" line="643 413 648 413 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 8)) OR ({#1.Out_MainActFB} AND (#3 &amp; 8)) OR ({#1.Out_Main2IO} AND (#5 &amp; 8))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineTopLeftVx3" height="1" width="6" left="638" top="408" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineTopLeftVx3" linkToolTipText="true" line="638 408 643 408 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 128)) OR ({#1.Out_MainActFB} AND (#3 &amp; 128)) OR ({#1.Out_Main2IO} AND (#5 &amp; 128))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineTopRightVx3" height="1" width="6" left="643" top="408" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineTopRightVx3" linkToolTipText="true" line="643 408 648 408 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 2)) OR ({#1.Out_MainActFB} AND (#3 &amp; 2)) OR ({#1.Out_Main2IO} AND (#5 &amp; 2))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <ellipse name="EllipseAlmSupVx17" height="5" width="5" left="635" top="400" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseAlmSupVx17" linkToolTipText="true" backStyle="solid" backColor="#FF8000" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_AlmSupMode}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <ellipse name="EllipseSimVx11" height="5" width="5" left="635" top="416" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseSimVx11" linkToolTipText="true" backStyle="solid" backColor="white" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_SimMode}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <ellipse name="EllipseFltVx17" height="5" width="5" left="646" top="416" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseFltVx17" linkToolTipText="true" backStyle="solid" backColor="yellow" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_GenAlmOn}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <ellipse name="EllipseManVx17" height="5" width="5" left="646" top="400" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseManVx17" linkToolTipText="true" backStyle="solid" backColor="navy" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_ManMode}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <polygon name="Polygon42" height="9" width="9" left="639" top="405" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon42" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="643 405 647 413 639 413 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="({#1.Out_GenAlmOn} And {#1.Out_GenUnack})" expressionTrueState="visible"/>
+                <animateColor expression="{#1.Out_GenAlmOn}" blinkRate="2">
+                    <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="red" backColor2="red" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                </animateColor>
+            </animations>
+        </polygon>
+        <parameters>
+            <parameter name="#1" description="PLCTag" value=""/>
+            <parameter name="#2" description="Name" value=""/>
+            <parameter name="#3" description="TypeNumber_Open" value=""/>
+            <parameter name="#4" description="TypeNumber_Closed" value=""/>
+            <parameter name="#5" description="Type_Number_MidPos" value=""/>
+        </parameters>
+    </group>
+    <group name="ValveH" visible="true" wallpaper="false" toolTipText="/*LS:0 #2*/" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.ValveH" linkToolTipText="true">
+        <rectangle name="BoxMainVx4" height="11" width="16" left="636" top="367" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxMainVx4" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateTouch TouchStyle="rectangular" pressAction="" repeatAction="" releaseAction="Display _STD_CM_ValvDig1 /T#1,#2,STD\HMI\Mem_1 /RP" repeatRate="0.25">
+                    <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                        <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                        <imageSettings imageReference="noImage"/>
+                    </confirm>
+                </animateTouch>
+                <animateColor expression="({#1.Out_Main1IO}*2) + ({#1.Out_Main2IO}*2) + ({#1.Out_GenAlmOn}*4)" blinkRate="2">
+                    <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="1" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="2" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="3" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="4" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="5" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                </animateColor>
+            </animations>
+        </rectangle>
+        <line name="LineMiddleTopVx4" height="1" width="6" left="646" top="372" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineMiddleTopVx4" linkToolTipText="true" line="651 372 646 372 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 1)) OR ({#1.Out_MainActFB}  AND (#3 &amp; 1))  OR ({#1.Out_Main2IO} AND (#5 &amp; 1))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineMiddleCenterVx4" height="1" width="7" left="640" top="372" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineMiddleCenterVx4" linkToolTipText="true" line="646 372 640 372 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 256)) OR ({#1.Out_MainActFB} AND (#3 &amp; 256)) OR ({#1.Out_Main2IO} AND (#5 &amp; 256))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineMiddleBottomVx4" height="1" width="5" left="636" top="372" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineMiddleBottomVx4" linkToolTipText="true" line="640 372 636 372 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 16)) OR ({#1.Out_MainActFB}  AND (#3 &amp; 16)) OR ({#1.Out_Main2IO} AND (#5 &amp; 16))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineBottomLeftVx4" height="6" width="1" left="641" top="367" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineBottomLeftVx4" linkToolTipText="true" line="641 367 641 372 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 32)) OR ({#1.Out_MainActFB}  AND (#3 &amp; 32)) OR ({#1.Out_Main2IO} AND (#5 &amp; 32))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineBottomRightVx4" height="6" width="1" left="641" top="372" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineBottomRightVx4" linkToolTipText="true" line="641 372 641 377 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 8)) OR ({#1.Out_MainActFB}  AND (#3 &amp; 8)) OR ({#1.Out_Main2IO} AND (#5 &amp; 8))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineTopLeftVx4" height="6" width="1" left="646" top="367" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineTopLeftVx4" linkToolTipText="true" line="646 367 646 372 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 128)) OR ({#1.Out_MainActFB}  AND (#3 &amp; 128)) OR ({#1.Out_Main2IO} AND (#5 &amp; 128))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <line name="LineTopRightVx4" height="6" width="1" left="646" top="372" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.LineTopRightVx4" linkToolTipText="true" line="646 372 646 377 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="black" foreColor="black">
+            <animations>
+                <animateVisibility expression="({#1.Out_MainDeactFB} AND (#4 &amp; 2)) OR ({#1.Out_MainActFB}  AND (#3 &amp; 2)) OR ({#1.Out_Main2IO} AND (#5 &amp; 2))" expressionTrueState="visible"/>
+            </animations>
+        </line>
+        <ellipse name="EllipseManVx18" height="5" width="5" left="649" top="364" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseManVx18" linkToolTipText="true" backStyle="solid" backColor="navy" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_ManMode}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <ellipse name="EllipseFltVx18" height="5" width="5" left="649" top="375" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseFltVx18" linkToolTipText="true" backStyle="solid" backColor="yellow" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_GenAlmOn}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <ellipse name="EllipseSimVx12" height="5" width="5" left="633" top="375" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseSimVx12" linkToolTipText="true" backStyle="solid" backColor="white" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_SimMode}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <ellipse name="EllipseAlmSupVx18" height="5" width="5" left="633" top="364" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseAlmSupVx18" linkToolTipText="true" backStyle="solid" backColor="#FF8000" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="{#1.Out_AlmSupMode}" expressionTrueState="visible"/>
+            </animations>
+        </ellipse>
+        <polygon name="Polygon37" height="9" width="9" left="640" top="367" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon37" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="644 367 648 375 640 375 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <animations>
+                <animateVisibility expression="({#1.Out_GenAlmOn} And {#1.Out_GenUnack})" expressionTrueState="visible"/>
+                <animateColor expression="{#1.Out_GenAlmOn}" blinkRate="2">
+                    <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="red" backColor2="red" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                </animateColor>
+            </animations>
+        </polygon>
+        <parameters>
+            <parameter name="#1" description="PLCTag" value=""/>
+            <parameter name="#2" description="Name" value=""/>
+            <parameter name="#3" description="TypeNumber_Open" value=""/>
+            <parameter name="#4" description="TypeNumber_Closed" value=""/>
+            <parameter name="#5" description="Type_Number_MidPos" value=""/>
+        </parameters>
+    </group>
+    <group name="SimpleValve1" visible="true" wallpaper="false" toolTipText="/*LS:0 #2*/" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.SimpleValve1" linkToolTipText="true">
+        <group name="Vy1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Vy1" linkToolTipText="true">
+            <rectangle name="BoxMainVy1" height="23" width="23" left="639" top="320" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxMainVy1" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateTouch TouchStyle="rectangular" pressAction="" repeatAction="" releaseAction="Display _STD_CM_ValvDig1 /T#1,#2,STD\HMI\Mem_1 /RP" repeatRate="0.25">
+                        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                            <imageSettings imageReference="noImage"/>
+                        </confirm>
+                    </animateTouch>
+                    <animateColor expression="({#1.Out_Main1IO}*2) + ({#1.Out_GenAlmOn}*4)" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="1" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="2" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="3" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="4" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="5" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </rectangle>
+            <group name="TypeVy1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.TypeVy1" linkToolTipText="true">
+                <polygon name="BodyBottomVy1" height="7" width="9" left="646" top="331" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BodyBottomVy1" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="646 337 654 337 650 331 650 331 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 4)" expressionTrueState="visible"/>
+                    </animations>
+                </polygon>
+                <polygon name="BodyTopVy1" height="7" width="9" left="646" top="325" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BodyTopVy1" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="646 325 654 325 650 331 650 331 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 1)" expressionTrueState="visible"/>
+                    </animations>
+                </polygon>
+                <polygon name="BodyLeftVy1" height="9" width="7" left="644" top="327" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BodyLeftVy1" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="644 327 644 335 650 331 650 331 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 8)" expressionTrueState="visible"/>
+                    </animations>
+                </polygon>
+                <polygon name="BodyRightVy1" height="9" width="7" left="650" top="327" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BodyRightVy1" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="656 327 656 335 650 331 650 331 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 2)" expressionTrueState="visible"/>
+                    </animations>
+                </polygon>
+                <group name="ActLeftVy1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.ActLeftVy1" linkToolTipText="true">
+                    <rectangle name="Polygon19" height="11" width="5" left="640" top="326" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon19" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <line name="Line174" height="1" width="6" left="644" top="331" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line3" linkToolTipText="true" line="644 331 649 331 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 128)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+                <group name="ActRightVy1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.ActRightVy1" linkToolTipText="true">
+                    <rectangle name="Polygon20" height="11" width="5" left="656" top="326" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon20" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <line name="Line175" height="1" width="6" left="651" top="331" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line4" linkToolTipText="true" line="656 331 651 331 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 32)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+                <group name="ActBottomVy1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.ActBottomVy1" linkToolTipText="true">
+                    <rectangle name="Polygon21" height="5" width="11" left="645" top="337" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon21" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <line name="Line176" height="6" width="1" left="650" top="332" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line14" linkToolTipText="true" line="650 337 650 332 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 64)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+                <group name="ActTopVy1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.ActTopVy1" linkToolTipText="true">
+                    <rectangle name="Polygon22" height="5" width="11" left="645" top="321" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon22" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <line name="Line177" height="6" width="1" left="650" top="325" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line15" linkToolTipText="true" line="650 325 650 330 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 16)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+            </group>
+            <ellipse name="EllipseManVx6" height="5" width="5" left="659" top="317" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseManVx6" linkToolTipText="true" backStyle="solid" backColor="navy" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_ManMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseFltVx7" height="5" width="5" left="658" top="340" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseFltVx7" linkToolTipText="true" backStyle="solid" backColor="yellow" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_GenAlmOn}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseSimVx6" height="5" width="5" left="636" top="340" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseSimVx6" linkToolTipText="true" backStyle="solid" backColor="white" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_SimMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseAlmSupVx6" height="5" width="5" left="636" top="317" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseAlmSupVx6" linkToolTipText="true" backStyle="solid" backColor="#FF8000" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_AlmSupMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <polygon name="Polygon23" height="11" width="11" left="645" top="326" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon23" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="650 326 655 336 645 336 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="({#1.Out_GenAlmOn} And {#1.Out_GenUnack})" expressionTrueState="visible"/>
+                    <animateColor expression="{#1.Out_GenAlmOn}" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="red" backColor2="red" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </polygon>
+        </group>
+        <parameters>
+            <parameter name="#1" description="PLCTag" value=""/>
+            <parameter name="#2" description="Name" value=""/>
+            <parameter name="#3" description="TypeNumber" value=""/>
+        </parameters>
+    </group>
+    <group name="SimpleValve2" visible="true" wallpaper="false" toolTipText="/*LS:0 #2*/" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.SimpleValve2" linkToolTipText="true">
+        <group name="Vy2" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Vy2" linkToolTipText="true">
+            <rectangle name="BoxMainVy2" height="23" width="23" left="670" top="322" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxMainVy2" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateTouch TouchStyle="rectangular" pressAction="" repeatAction="" releaseAction="Display _STD_CM_ValvDig1 /T#1,#2,STD\HMI\Mem_1 /RP" repeatRate="0.25">
+                        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                            <imageSettings imageReference="noImage"/>
+                        </confirm>
+                    </animateTouch>
+                    <animateColor expression="({#1.Out_Main1IO}*2) + ({#1.Out_GenAlmOn}*4)" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="1" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="2" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="3" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="4" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="5" foreBehavior="solid" foreColor1="red" foreColor2="red" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </rectangle>
+            <group name="TypeVy2" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.TypeVy2" linkToolTipText="true">
+                <polygon name="BodyBottomVy2" height="7" width="9" left="677" top="333" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BodyBottomVy2" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="677 339 685 339 681 333 681 333 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 4)" expressionTrueState="visible"/>
+                    </animations>
+                </polygon>
+                <polygon name="BodyTopVy2" height="7" width="9" left="677" top="327" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BodyTopVy2" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="677 327 685 327 681 333 681 333 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 1)" expressionTrueState="visible"/>
+                    </animations>
+                </polygon>
+                <polygon name="BodyLeftVy2" height="9" width="7" left="675" top="329" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BodyLeftVy2" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="675 329 675 337 681 333 681 333 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 8)" expressionTrueState="visible"/>
+                    </animations>
+                </polygon>
+                <polygon name="BodyRightVy2" height="9" width="7" left="681" top="329" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BodyRightVy2" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="687 329 687 337 681 333 681 333 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 2)" expressionTrueState="visible"/>
+                    </animations>
+                </polygon>
+                <group name="ActLeftVy2" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.ActLeftVy2" linkToolTipText="true">
+                    <line name="Line178" height="1" width="6" left="675" top="333" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line59" linkToolTipText="true" line="675 333 680 333 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <arc name="Arc6" height="10" width="6" left="670" top="328" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Arc6" linkToolTipText="true" backStyle="transparent" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" startAngle="1.5707963267949" endAngle="4.71238898038469"/>
+                    <line name="Line179" height="11" width="1" left="675" top="328" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line70" linkToolTipText="true" line="675 338 675 328 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 128)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+                <group name="ActRightVy2" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.ActRightVy2" linkToolTipText="true">
+                    <line name="Line180" height="1" width="6" left="682" top="333" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line60" linkToolTipText="true" line="687 333 682 333 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <arc name="Arc4" height="10" width="5" left="687" top="328" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Arc4" linkToolTipText="true" backStyle="transparent" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" startAngle="4.64582081660887" endAngle="1.63736449057072"/>
+                    <line name="Line181" height="11" width="1" left="687" top="328" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line68" linkToolTipText="true" line="687 338 687 328 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 32)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+                <group name="ActBottomVy2" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.ActBottomVy2" linkToolTipText="true">
+                    <line name="Line182" height="6" width="1" left="681" top="334" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line61" linkToolTipText="true" line="681 339 681 334 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <arc name="Arc5" height="5" width="10" left="676" top="339" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Arc5" linkToolTipText="true" backStyle="transparent" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" startAngle="6.24616519130566" endAngle="3.17861276946372">
+                        <transform scaleWidth="4.5" scaleHeight="-4" shearWidth="0" shearHeight="0" offsetWidth="680.5" offsetHeight="339"/>
+                    </arc>
+                    <line name="Line183" height="1" width="11" left="676" top="339" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line69" linkToolTipText="true" line="676 339 686 339 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 64)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+                <group name="ActTopVy2" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.ActTopVy2" linkToolTipText="true">
+                    <line name="Line184" height="6" width="1" left="681" top="327" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line62" linkToolTipText="true" line="681 327 681 332 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <arc name="Arc3" height="6" width="10" left="676" top="322" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Arc3" linkToolTipText="true" backStyle="transparent" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" startAngle="3.14159265358979" endAngle="0">
+                        <transform scaleWidth="4.5" scaleHeight="-3.77777791023254" shearWidth="0" shearHeight="0" offsetWidth="680.5" offsetHeight="325.777770996094"/>
+                    </arc>
+                    <line name="Line185" height="1" width="11" left="676" top="327" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line67" linkToolTipText="true" line="686 327 676 327 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 16)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+            </group>
+            <ellipse name="EllipseManVx21" height="5" width="5" left="690" top="319" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseManVx21" linkToolTipText="true" backStyle="solid" backColor="navy" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_ManMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseFltVx21" height="5" width="5" left="689" top="342" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseFltVx21" linkToolTipText="true" backStyle="solid" backColor="yellow" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_GenAlmOn}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseSimVx15" height="5" width="5" left="667" top="342" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseSimVx15" linkToolTipText="true" backStyle="solid" backColor="white" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_SimMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseAlmSupVx21" height="5" width="5" left="667" top="319" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseAlmSupVx21" linkToolTipText="true" backStyle="solid" backColor="#FF8000" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_AlmSupMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <polygon name="Polygon35" height="11" width="11" left="676" top="328" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon35" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="681 328 686 338 676 338 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="({#1.Out_GenAlmOn} And {#1.Out_GenUnack})" expressionTrueState="visible"/>
+                    <animateColor expression="{#1.Out_GenAlmOn}" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="red" backColor2="red" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </polygon>
+        </group>
+        <parameters>
+            <parameter name="#1" description="PLCTag" value=""/>
+            <parameter name="#2" description="Name" value=""/>
+            <parameter name="#3" description="TypeNumber" value=""/>
+        </parameters>
+    </group>
+    <group name="MotorType3" visible="true" wallpaper="false" toolTipText="/*LS:0 #2*/" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.MotorType3" linkToolTipText="true">
+        <group name="Px3" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Px3" linkToolTipText="true">
+            <group name="TypePx3" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.TypePx3" linkToolTipText="true">
+                <ellipse name="MainBodyPx3" height="17" width="17" left="799" top="317" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.MainBodyPx3" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <animations>
+                        <animateTouch TouchStyle="rectangular" pressAction="" repeatAction="" releaseAction="Display _STD_CM_MotDig1 /T#1,#2,STD\HMI\Mem_1 /RP" repeatRate="0.25">
+                            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                                <imageSettings imageReference="noImage"/>
+                            </confirm>
+                        </animateTouch>
+                        <animateColor expression="({#1.Out_Run}*2) + ({#1.Out_GenAlmOn}*4)" blinkRate="2">
+                            <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                            <color value="2" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                            <color value="4" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        </animateColor>
+                    </animations>
+                </ellipse>
+                <group name="CenterLobePx3" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.CenterLobePx3" linkToolTipText="true">
+                    <ellipse name="Ellipse3" height="9" width="9" left="803" top="325" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Ellipse3" linkToolTipText="true" backStyle="transparent" backColor="black" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <ellipse name="Ellipse10" height="9" width="9" left="803" top="317" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Ellipse10" linkToolTipText="true" backStyle="transparent" backColor="black" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 128)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+                <group name="CenterPositivePx3" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.CenterPositivePx3" linkToolTipText="true">
+                    <ellipse name="Ellipse11" height="9" width="9" left="799" top="321" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Ellipse11" linkToolTipText="true" backStyle="transparent" backColor="black" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <ellipse name="Ellipse15" height="9" width="9" left="807" top="321" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Ellipse15" linkToolTipText="true" backStyle="transparent" backColor="black" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 32)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+                <ellipse name="CenterLiquidRingPx3" height="13" width="13" left="801" top="319" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.CenterLiquidRingPx3" linkToolTipText="true" backStyle="transparent" backColor="black" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 64)" expressionTrueState="visible"/>
+                    </animations>
+                </ellipse>
+                <group name="CenterDiaphragmPx3" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.CenterDiaphragmPx3" linkToolTipText="true">
+                    <line name="Line186" height="5" width="14" left="800" top="321" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line19" linkToolTipText="true" line="800 321 813 325 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <line name="Line187" height="5" width="14" left="800" top="325" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Line20" linkToolTipText="true" line="800 329 813 325 " backStyle="solid" lineStyle="solid" lineWidth="1" backColor="teal" foreColor="black"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 256)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+                <text name="CenterMotorPx4" height="12" width="14" left="801" top="319" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.CenterMotorPx4" linkToolTipText="true" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" charHeight="12" charWidth="8" bold="true" italic="false" underline="false" strikethrough="false" caption="M">
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 8)" expressionTrueState="visible"/>
+                    </animations>
+                </text>
+                <group name="CenterCentrifugalPx3" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.CenterCentrifugalPx3" linkToolTipText="true">
+                    <freehand name="Freehand9" height="7" width="3" left="807" top="319" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Freehand9" linkToolTipText="true" backStyle="transparent" backColor="black" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="807 319 807 319 807 319 807 319 807 319 807 319 807 319 807 319 807 319 808 319 808 319 808 319 808 320 808 320 808 320 808 320 808 320 808 320 808 320 808 320 808 320 808 320 808 320 808 320 808 320 809 320 809 320 809 320 809 321 809 321 809 321 809 321 809 321 809 321 809 321 809 321 809 321 809 321 809 322 809 322 809 322 809 322 809 322 809 322 809 322 809 322 809 322 809 323 809 323 809 323 809 323 809 323 809 323 809 323 809 323 809 323 809 324 809 324 809 324 809 324 809 324 809 324 809 324 809 324 809 324 809 324 809 324 809 324 808 324 808 324 808 324 808 324 808 324 808 324 808 325 808 325 808 325 808 325 808 325 807 325 807 325 807 325 807 325 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <freehand name="Freehand10" height="7" width="3" left="805" top="325" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Freehand10" linkToolTipText="true" backStyle="transparent" backColor="black" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="807 331 807 331 807 331 807 331 807 331 807 331 807 331 807 331 807 331 806 331 806 331 806 331 806 330 806 330 806 330 806 330 806 330 806 330 806 330 806 330 806 330 806 330 806 330 806 330 806 330 805 330 805 330 805 330 805 329 805 329 805 329 805 329 805 329 805 329 805 329 805 329 805 329 805 329 805 328 805 328 805 328 805 328 805 328 805 328 805 328 805 328 805 328 805 327 805 327 805 327 805 327 805 327 805 327 805 327 805 327 805 327 805 326 805 326 805 326 805 326 805 326 805 326 805 326 805 326 805 326 805 326 805 326 805 326 806 326 806 326 806 326 806 326 806 326 806 326 806 325 806 325 806 325 806 325 806 325 807 325 807 325 807 325 807 325 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <freehand name="Freehand11" height="3" width="7" left="807" top="325" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Freehand11" linkToolTipText="true" backStyle="transparent" backColor="black" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="813 325 813 325 813 325 813 325 813 325 813 325 813 325 813 325 813 325 813 326 813 326 813 326 812 326 812 326 812 326 812 326 812 326 812 326 812 326 812 326 812 326 812 326 812 326 812 326 812 326 812 327 812 327 812 327 811 327 811 327 811 327 811 327 811 327 811 327 811 327 811 327 811 327 811 327 810 327 810 327 810 327 810 327 810 327 810 327 810 327 810 327 810 327 809 327 809 327 809 327 809 327 809 327 809 327 809 327 809 327 809 327 808 327 808 327 808 327 808 327 808 327 808 327 808 327 808 327 808 327 808 327 808 327 808 327 808 326 808 326 808 326 808 326 808 326 808 326 807 326 807 326 807 326 807 326 807 326 807 325 807 325 807 325 807 325 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <freehand name="Freehand12" height="3" width="7" left="801" top="323" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Freehand12" linkToolTipText="true" backStyle="transparent" backColor="black" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="801 325 801 325 801 325 801 325 801 325 801 325 801 325 801 325 801 325 801 324 801 324 801 324 802 324 802 324 802 324 802 324 802 324 802 324 802 324 802 324 802 324 802 324 802 324 802 324 802 324 802 323 802 323 802 323 803 323 803 323 803 323 803 323 803 323 803 323 803 323 803 323 803 323 803 323 804 323 804 323 804 323 804 323 804 323 804 323 804 323 804 323 804 323 805 323 805 323 805 323 805 323 805 323 805 323 805 323 805 323 805 323 806 323 806 323 806 323 806 323 806 323 806 323 806 323 806 323 806 323 806 323 806 323 806 323 806 324 806 324 806 324 806 324 806 324 806 324 807 324 807 324 807 324 807 324 807 324 807 325 807 325 807 325 807 325 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                    <animations>
+                        <animateVisibility expression="(#3 &amp; 16)" expressionTrueState="visible"/>
+                    </animations>
+                </group>
+            </group>
+            <polygon name="MainBasePx3" height="6" width="16" left="800" top="334" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.MainBasePx3" linkToolTipText="true" backStyle="solid" backColor="gray" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="800 339 815 339 813 334 802 334 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="(#3 &amp; 1)" expressionTrueState="visible"/>
+                </animations>
+            </polygon>
+            <ellipse name="EllipseAlmSupVx7" height="5" width="5" left="797" top="316" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseAlmSupVx7" linkToolTipText="true" backStyle="solid" backColor="#FF8000" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_AlmSupMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseSimVx7" height="5" width="5" left="797" top="331" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseSimVx7" linkToolTipText="true" backStyle="solid" backColor="white" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_SimMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseFltVx8" height="5" width="5" left="813" top="331" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseFltVx8" linkToolTipText="true" backStyle="solid" backColor="yellow" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_GenAlmOn}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseManVx7" height="5" width="5" left="813" top="316" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseManVx7" linkToolTipText="true" backStyle="solid" backColor="navy" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_ManMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <polygon name="Polygon50" height="11" width="11" left="803" top="329" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon50" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="808 329 813 339 803 339 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="({#1.Out_GenAlmOn} And {#1.Out_GenUnack})" expressionTrueState="visible"/>
+                    <animateColor expression="{#1.Out_GenAlmOn}" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="red" backColor2="red" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </polygon>
+        </group>
+        <parameters>
+            <parameter name="#1" description="PLCTag" value=""/>
+            <parameter name="#2" description="Name" value=""/>
+            <parameter name="#3" description="TypeNumber" value=""/>
+        </parameters>
+    </group>
+    <group name="DigitalInput1_2" visible="true" wallpaper="false" toolTipText="/*LS:0 #2*/" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.DigitalInput1_2" linkToolTipText="true">
+        <group name="DIx2" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.DIx2" linkToolTipText="true">
+            <rectangle name="BoxMainDIx3" height="12" width="12" left="866" top="369" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxMainDIx3" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateTouch TouchStyle="rectangular" pressAction="" repeatAction="" releaseAction="Display _STD_CM_InDig /T#1,#2,STD\HMI\Mem_1 /RP" repeatRate="0.25">
+                        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                            <imageSettings imageReference="noImage"/>
+                        </confirm>
+                    </animateTouch>
+                </animations>
+            </rectangle>
+            <ellipse name="CenterDIx3" height="9" width="9" left="867" top="370" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.CenterDIx3" linkToolTipText="true" backStyle="solid" backColor="gray" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateColor expression="{#1.Out_Value}" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="gray" backColor2="gray" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseManVx14" height="5" width="5" left="875" top="366" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseManVx14" linkToolTipText="true" backStyle="solid" backColor="navy" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_ManMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseFltVx14" height="5" width="5" left="875" top="378" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseFltVx14" linkToolTipText="true" backStyle="solid" backColor="yellow" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_GenAlmOn}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseAlmSupVx14" height="5" width="5" left="863" top="366" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseAlmSupVx14" linkToolTipText="true" backStyle="solid" backColor="#FF8000" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_AlmSupMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+        </group>
+        <parameters>
+            <parameter name="#1" description="PLCTag" value=""/>
+            <parameter name="#2" description="Name" value=""/>
+        </parameters>
+    </group>
+    <group name="DigitalOutput1_1" visible="true" wallpaper="false" toolTipText="/*LS:0 #2*/" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.DigitalOutput1_1" linkToolTipText="true">
+        <group name="DOx1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.DOx1" linkToolTipText="true">
+            <rectangle name="BoxMainDIx2" height="12" width="12" left="945" top="321" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxMainDIx2" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateTouch TouchStyle="rectangular" pressAction="" repeatAction="" releaseAction="Display  _STD_CM_OutDig /T#1,#2,STD\HMI\Mem_1 /RP" repeatRate="0.25">
+                        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                            <imageSettings imageReference="noImage"/>
+                        </confirm>
+                    </animateTouch>
+                </animations>
+            </rectangle>
+            <ellipse name="CenterDIx2" height="9" width="9" left="946" top="322" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.CenterDIx2" linkToolTipText="true" backStyle="solid" backColor="gray" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateColor expression="{#1.Out_Value}" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="gray" backColor2="gray" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseManVx12" height="5" width="5" left="954" top="318" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseManVx12" linkToolTipText="true" backStyle="solid" backColor="navy" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_ManMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseFltVx12" height="5" width="5" left="954" top="330" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseFltVx12" linkToolTipText="true" backStyle="solid" backColor="yellow" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_GenAlmOn}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseAlmSupVx12" height="5" width="5" left="942" top="318" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseAlmSupVx12" linkToolTipText="true" backStyle="solid" backColor="#FF8000" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_AlmSupMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+        </group>
+        <parameters>
+            <parameter name="#1" description="PLCTag" value=""/>
+            <parameter name="#2" description="Name" value=""/>
+        </parameters>
+    </group>
+    <group name="AnalogInput1_1" visible="true" wallpaper="false" toolTipText="/*LS:0 #2*/" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.AnalogInput1_1" linkToolTipText="true">
+        <group name="AIx1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.AIx1" linkToolTipText="true">
+            <group name="BoxPanelAIx1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxPanelAIx1" linkToolTipText="true">
+                <polyline name="Polyline9" height="17" width="69" left="1019" top="320" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polyline9" linkToolTipText="true" backStyle="transparent" backColor="teal" foreColor="silver" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="1019 336 1087 336 1087 320 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                <polyline name="Polyline10" height="17" width="69" left="1019" top="320" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polyline10" linkToolTipText="true" backStyle="transparent" backColor="teal" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="1087 320 1019 320 1019 336 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                <polyline name="Polyline11" height="19" width="71" left="1018" top="319" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polyline11" linkToolTipText="true" backStyle="transparent" backColor="teal" foreColor="white" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="1018 337 1088 337 1088 319 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                <polyline name="Polyline12" height="19" width="71" left="1018" top="319" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polyline12" linkToolTipText="true" backStyle="transparent" backColor="teal" foreColor="gray" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="1088 319 1018 319 1018 337 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+            </group>
+            <rectangle name="BoxMainAIx1" height="16" width="68" left="1020" top="321" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxMainAIx1" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateTouch TouchStyle="rectangular" pressAction="" repeatAction="" releaseAction="Display _STD_CM_InAnlg /T#1,#2,STD\HMI\Mem_1,#3 /RP" repeatRate="0.25">
+                        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                            <imageSettings imageReference="noImage"/>
+                        </confirm>
+                    </animateTouch>
+                    <animateColor expression="({#1.Out_GenAlmOn}*2)" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="silver" foreColor2="silver" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="2" foreBehavior="solid" foreColor1="silver" foreColor2="silver" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </rectangle>
+            <numericDisplay name="NumericDisplayAIx1" height="14" width="35" left="1023" top="322" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.NumericDisplayAIx1" linkToolTipText="true" backColor="silver" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="8" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="5" showDigitGrouping="false" decimalPlaces="0" format="floatingPoint" overflow="roundValue" leadingCharacter="blanks" decimalPlaceType="dynamic">
+                <connections>
+                    <connection name="Value" expression="{#1.Out_ValueEU}"/>
+                    <connection name="dynamicDecimalPlace" expression="{STD\HMI\Mem_#4}"/>
+                </connections>
+            </numericDisplay>
+            <stringDisplay name="StringDisplayAIx1" height="14" width="28" left="1060" top="322" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.StringDisplayAIx1" linkToolTipText="true" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="8" bold="false" italic="false" underline="false" strikethrough="false" justification="left" dimensionsHeight="1" dimensionsWidth="4" characterOffset="0">
+                <connections>
+                    <connection name="Value" expression="{#3}"/>
+                </connections>
+            </stringDisplay>
+            <ellipse name="EllipseAlmSupVx9" height="5" width="5" left="1016" top="316" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseAlmSupVx9" linkToolTipText="true" backStyle="solid" backColor="#FF8000" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_AlmSupMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseManVx9" height="5" width="5" left="1085" top="316" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseManVx9" linkToolTipText="true" backStyle="solid" backColor="navy" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_ManMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseFltVx3" height="5" width="5" left="1085" top="334" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseFltVx3" linkToolTipText="true" backStyle="solid" backColor="yellow" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_GenAlmOn}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <polygon name="Polygon52" height="11" width="11" left="1069" top="323" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon52" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="1074 323 1079 333 1069 333 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="({#1.Out_GenAlmOn} And {#1.Out_GenUnack})" expressionTrueState="visible"/>
+                    <animateColor expression="{#1.Out_GenAlmOn}" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="red" backColor2="red" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </polygon>
+        </group>
+        <parameters>
+            <parameter name="#1" description="PLCTag" value=""/>
+            <parameter name="#2" description="Name" value=""/>
+            <parameter name="#3" description="EU" value=""/>
+            <parameter name="#4" description="Number of decimal places" value=""/>
+        </parameters>
+    </group>
+    <group name="AnalogOutput1_1" visible="true" wallpaper="false" toolTipText="/*LS:0 #2*/" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.AnalogOutput1_1" linkToolTipText="true">
+        <group name="AOx1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.AOx1" linkToolTipText="true">
+            <group name="BoxPanelAOx1" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxPanelAOx1" linkToolTipText="true">
+                <polyline name="Polyline13" height="17" width="69" left="1117" top="320" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polyline13" linkToolTipText="true" backStyle="transparent" backColor="teal" foreColor="silver" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="1117 336 1185 336 1185 320 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                <polyline name="Polyline14" height="17" width="69" left="1117" top="320" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polyline14" linkToolTipText="true" backStyle="transparent" backColor="teal" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="1185 320 1117 320 1117 336 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                <polyline name="Polyline15" height="19" width="71" left="1116" top="319" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polyline15" linkToolTipText="true" backStyle="transparent" backColor="teal" foreColor="white" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="1116 337 1186 337 1186 319 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+                <polyline name="Polyline16" height="19" width="71" left="1116" top="319" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polyline16" linkToolTipText="true" backStyle="transparent" backColor="teal" foreColor="gray" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="1186 319 1116 319 1116 337 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+            </group>
+            <rectangle name="BoxMainAOx1" height="16" width="68" left="1118" top="321" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.BoxMainAOx1" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateTouch TouchStyle="rectangular" pressAction="" repeatAction="" releaseAction="Display _STD_CM_OutAnlg /T#1,#2,STD\HMI\Mem_1,#3 /RP" repeatRate="0.25">
+                        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                            <imageSettings imageReference="noImage"/>
+                        </confirm>
+                    </animateTouch>
+                    <animateColor expression="({#1.Out_GenAlmOn}*2)" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="silver" foreColor2="silver" backBehavior="solid" backColor1="silver" backColor2="silver" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="2" foreBehavior="solid" foreColor1="silver" foreColor2="silver" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </rectangle>
+            <numericDisplay name="NumericDisplayAOx1" height="14" width="35" left="1121" top="322" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.NumericDisplayAOx1" linkToolTipText="true" backColor="silver" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="8" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="5" showDigitGrouping="false" decimalPlaces="1" format="floatingPoint" overflow="roundValue" leadingCharacter="blanks" decimalPlaceType="fixed">
+                <connections>
+                    <connection name="Value" expression="{#1.Out_ValueEU}"/>
+                </connections>
+            </numericDisplay>
+            <stringDisplay name="StringDisplayAOx1" height="14" width="28" left="1158" top="322" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.StringDisplayAOx1" linkToolTipText="true" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="8" bold="false" italic="false" underline="false" strikethrough="false" justification="left" dimensionsHeight="1" dimensionsWidth="4" characterOffset="0">
+                <connections>
+                    <connection name="Value" expression="{#3}"/>
+                </connections>
+            </stringDisplay>
+            <ellipse name="EllipseFltVx10" height="5" width="5" left="1183" top="334" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseFltVx10" linkToolTipText="true" backStyle="solid" backColor="yellow" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_GenAlmOn}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseManVx10" height="5" width="5" left="1183" top="316" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseManVx10" linkToolTipText="true" backStyle="solid" backColor="navy" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_ManMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <ellipse name="EllipseAlmSupVx10" height="5" width="5" left="1114" top="316" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.EllipseAlmSupVx10" linkToolTipText="true" backStyle="solid" backColor="#FF8000" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="{#1.Out_AlmSupMode}" expressionTrueState="visible"/>
+                </animations>
+            </ellipse>
+            <polygon name="Polygon53" height="11" width="11" left="1166" top="323" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="_std_cm_cmis.Polygon53" linkToolTipText="true" backStyle="solid" backColor="silver" foreColor="black" lineStyle="solid" lineWidth="1" patternStyle="none" patternColor="black" path="1171 323 1176 333 1166 333 " endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <animations>
+                    <animateVisibility expression="({#1.Out_GenAlmOn} And {#1.Out_GenUnack})" expressionTrueState="visible"/>
+                    <animateColor expression="{#1.Out_GenAlmOn}" blinkRate="2">
+                        <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="red" backColor2="red" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                        <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="yellow" backColor2="yellow" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    </animateColor>
+                </animations>
+            </polygon>
+        </group>
+        <parameters>
+            <parameter name="#1" description="PLCTag" value=""/>
+            <parameter name="#2" description="Name" value=""/>
+            <parameter name="#3" description="EU" value=""/>
+        </parameters>
+    </group>
+    <vbaProject>
+        <vbaItem>
+            <!--Item Name:ThisDisplay, Item Type:HostProjectItem-->
+            <encryptedData hash="8d11e2ea90dfed5a96a34bbe51e8b9ff">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[J05BTUU9VGhpc0Rpc3BsYXksVFlQRT0zDQpWRVJTSU9OIDEuMCBDTEFTUw0KQkVHSU4NCiAgTXVs
+dGlVc2UgPSAtMSAgJ1RydWUNCkVORA0KQXR0cmlidXRlIFZCX05hbWUgPSAiVGhpc0Rpc3BsYXki
+DQpBdHRyaWJ1dGUgVkJfR2xvYmFsTmFtZVNwYWNlID0gRmFsc2UNCkF0dHJpYnV0ZSBWQl9DcmVh
+dGFibGUgPSBGYWxzZQ0KQXR0cmlidXRlIFZCX1ByZWRlY2xhcmVkSWQgPSBUcnVlDQpBdHRyaWJ1
+dGUgVkJfRXhwb3NlZCA9IFRydWUNCg==]]>
+            </encryptedData>
+            <vbaCode>
+                <![CDATA[Private Sub Display_AnimationStart()
+
+End Sub
+]]>
+            </vbaCode>
+        </vbaItem>
+    </vbaProject>
+</gfx>
